@@ -2,7 +2,7 @@ name: Update dist/
 
 on:
   push:
-    branches-ignore: ["update-dist--**"]
+    branches-ignore: ["update-dist--**", "release-please--**"]
   workflow_dispatch:
 
 jobs:
