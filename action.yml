@@ -1,0 +1,8 @@
+name: "Build version"
+description: "Prepare build version"
+outputs:
+  date:
+    description: "Current date as a string"
+runs:
+  using: "node16"
+  main: "dist/index.js"
