@@ -1,6 +1,6 @@
-import { parseVersion } from './utils/github';
 import * as core from '@actions/core';
 import * as C from './constants';
+import { parseVersion } from './utils/github';
 
 /**
  * GitHub Action entrypoint.

@@ -1,5 +1,5 @@
 import * as core from '@actions/core';
-import { formatDate, addToCurrentDate } from './date';
+import { addToCurrentDate, formatDate } from './date';
 import { normalizeRefName } from './git';
 
 export const parseVersion = (expireInDays: string, tagPrefix: string): { version: string; stable: boolean } => {
