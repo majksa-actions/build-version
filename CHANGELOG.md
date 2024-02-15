@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/majksa-actions/build-version/compare/v1.0.0...v1.0.1) (2024-02-15)
+
+
+### Bug Fixes
+
+* update action.yml ([ec74fc1](https://github.com/majksa-actions/build-version/commit/ec74fc1466d9f1e13dde3e108ab6d8d4b239aa57))
+
 ## 1.0.0 (2024-02-15)
 
 
