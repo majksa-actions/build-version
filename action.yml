@@ -1,8 +1,20 @@
 name: "Build version"
 description: "Prepare build version"
+inputs:
+  expire-in-days:
+    description: |
+      Number of days to determine generated version expiration, e.g. `7`.
+      When zero or unset, `-expire` suffix won't be added even for unstable versions.
+    required: false
+  tag-prefix:
+    description: 'Prefix of tag name to be removed to get actual version number, e.g. `""` (any prefix), defaults to `"v"` '
+    required: false
+    default: "v"
 outputs:
-  date:
-    description: "Current date as a string"
+  version:
+    description: "If action runs on tag this output contains tag name without configured tag prefix, otherwise `0.0.0-{branch}.{sha:8}-expire{YYYYMMDDHHmm}`"
+  stable:
+    description: "If action runs on tag this output contains true otherwise false"
 runs:
   using: "node20"
   main: "dist/index.js"
