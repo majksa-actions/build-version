@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/majksa-actions/build-version/compare/v1.0.1...v1.0.2) (2024-02-15)
+
+
+### Bug Fixes
+
+* **github:** setup corrent major and minor version updates ([db95344](https://github.com/majksa-actions/build-version/commit/db95344689b7fc2d250905347e0f90a314c980b3))
+
 ## [1.0.1](https://github.com/majksa-actions/build-version/compare/v1.0.0...v1.0.1) (2024-02-15)
 
 
