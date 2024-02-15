@@ -1,3 +1,3 @@
-console.log("Hello via Bun!");
+console.log("Hello to GitHub actions via Bun!");
 
-//# debugId=1C208E32145D939564756e2164756e21
+//# debugId=3C07D398C02A1D3364756e2164756e21
