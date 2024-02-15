@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "sources": ["../src/index.ts"],
+  "sourcesContent": [
+    "console.log('Hello via Bun!');\n"
+  ],
+  "mappings": "AAAA,QAAQ,IAAI,gBAAgB",
+  "debugId": "1C208E32145D939564756e2164756e21",
+  "names": []
+}
