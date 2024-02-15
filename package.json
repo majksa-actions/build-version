@@ -1,11 +1,14 @@
 {
-  "name": "@majksa-actions/build-version",
-  "module": "src/index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  }
+	"name": "@majksa-actions/build-version",
+	"module": "src/index.ts",
+	"type": "module",
+	"scripts": {
+		"build": "bun build src/index.ts --outdir dist --sourcemap=external --minify"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	}
 }
