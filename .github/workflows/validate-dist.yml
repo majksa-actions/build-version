@@ -24,7 +24,7 @@ jobs:
         run: bun install
 
       - name: Rebuild the dist/ directory
-        run: npm run build
+        run: bun run build
 
       - name: Compare the expected and actual dist/ directories
         run: |

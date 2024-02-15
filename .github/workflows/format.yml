@@ -1,13 +1,13 @@
-name: Update dist/
+name: Reformat code
 
 on:
   push:
-    branches-ignore: ["update-dist--**", "release-please--**"]
+    branches-ignore: ["update-format--**", "release-please--**"]
   workflow_dispatch:
 
 jobs:
-  update-dist:
-    name: Update dist
+  update-format:
+    name: Reformat code
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -23,14 +23,14 @@ jobs:
         run: bun install
 
       - name: Rebuild the dist/ directory
-        run: bun run build
+        run: bun run format
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          title: "chore(dist): update dist/ on ${{ github.ref_name }}"
-          commit-message: "chore(dist): update dist/"
-          body: "Updated dist/ built distributable files"
-          branch: update-dist--${{ github.ref_name }}
+          title: "style: reformat code on ${{ github.ref_name }}"
+          commit-message: "style: reformat code"
+          body: "Reformatted code using biome"
+          branch: update-format--${{ github.ref_name }}
           delete-branch: true
           labels: bot,dist
