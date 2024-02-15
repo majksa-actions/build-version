@@ -1,1 +1,1 @@
-console.log('Hello via Bun!');
+console.log('Hello to GitHub actions via Bun!');
